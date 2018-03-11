@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		8BA3C88B20555E0300F978B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3C88A20555E0300F978B7 /* AppDelegate.swift */; };
-		8BA3C88D20555E0300F978B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3C88C20555E0300F978B7 /* ViewController.swift */; };
-		8BA3C89020555E0300F978B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BA3C88E20555E0300F978B7 /* Main.storyboard */; };
+		8BA3C88D20555E0300F978B7 /* ListOrganizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3C88C20555E0300F978B7 /* ListOrganizationViewController.swift */; };
+		8BA3C89020555E0300F978B7 /* ListOrganization.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BA3C88E20555E0300F978B7 /* ListOrganization.storyboard */; };
 		8BA3C89220555E0300F978B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BA3C89120555E0300F978B7 /* Assets.xcassets */; };
-		8BA3C89520555E0300F978B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BA3C89320555E0300F978B7 /* LaunchScreen.storyboard */; };
 		8BA3C8A020555E0300F978B7 /* OpenNgoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3C89F20555E0300F978B7 /* OpenNgoTests.swift */; };
+		8BA3C8B02055928000F978B7 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3C8AF2055928000F978B7 /* RootRouter.swift */; };
+		8BA3C8B22055930900F978B7 /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3C8B12055930900F978B7 /* RootWireframe.swift */; };
+		8BA3C8B4205593AB00F978B7 /* ListOrganizationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3C8B3205593AB00F978B7 /* ListOrganizationRouter.swift */; };
+		8BA3C8B62055940100F978B7 /* ListOrganizationWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3C8B52055940100F978B7 /* ListOrganizationWireframe.swift */; };
+		8BA3C8BC20559F1F00F978B7 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3C8BB20559F1F00F978B7 /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +32,18 @@
 /* Begin PBXFileReference section */
 		8BA3C88720555E0300F978B7 /* OpenNgo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenNgo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BA3C88A20555E0300F978B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8BA3C88C20555E0300F978B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8BA3C88F20555E0300F978B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8BA3C88C20555E0300F978B7 /* ListOrganizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrganizationViewController.swift; sourceTree = "<group>"; };
+		8BA3C88F20555E0300F978B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ListOrganization.storyboard; sourceTree = "<group>"; };
 		8BA3C89120555E0300F978B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8BA3C89420555E0300F978B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8BA3C89620555E0300F978B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BA3C89B20555E0300F978B7 /* OpenNgoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenNgoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BA3C89F20555E0300F978B7 /* OpenNgoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenNgoTests.swift; sourceTree = "<group>"; };
 		8BA3C8A120555E0300F978B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BA3C8AF2055928000F978B7 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		8BA3C8B12055930900F978B7 /* RootWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
+		8BA3C8B3205593AB00F978B7 /* ListOrganizationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrganizationRouter.swift; sourceTree = "<group>"; };
+		8BA3C8B52055940100F978B7 /* ListOrganizationWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrganizationWireframe.swift; sourceTree = "<group>"; };
+		8BA3C8BB20559F1F00F978B7 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +85,9 @@
 		8BA3C88920555E0300F978B7 /* OpenNgo */ = {
 			isa = PBXGroup;
 			children = (
-				8BA3C88A20555E0300F978B7 /* AppDelegate.swift */,
-				8BA3C88C20555E0300F978B7 /* ViewController.swift */,
-				8BA3C88E20555E0300F978B7 /* Main.storyboard */,
-				8BA3C89120555E0300F978B7 /* Assets.xcassets */,
-				8BA3C89320555E0300F978B7 /* LaunchScreen.storyboard */,
-				8BA3C89620555E0300F978B7 /* Info.plist */,
+				8BA3C8B8205597B200F978B7 /* Classes */,
+				8BA3C8AA20558D3800F978B7 /* Resources */,
+				8BA3C8AB20558EA000F978B7 /* Supported Files */,
 			);
 			path = OpenNgo;
 			sourceTree = "<group>";
@@ -94,6 +99,93 @@
 				8BA3C8A120555E0300F978B7 /* Info.plist */,
 			);
 			path = OpenNgoTests;
+			sourceTree = "<group>";
+		};
+		8BA3C8AA20558D3800F978B7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8BA3C89120555E0300F978B7 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8BA3C8AB20558EA000F978B7 /* Supported Files */ = {
+			isa = PBXGroup;
+			children = (
+				8BA3C89620555E0300F978B7 /* Info.plist */,
+			);
+			path = "Supported Files";
+			sourceTree = "<group>";
+		};
+		8BA3C8AC20558ED700F978B7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				8BA3C88A20555E0300F978B7 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		8BA3C8AD20558F1100F978B7 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				8BA3C8AE2055900900F978B7 /* Root */,
+				8BA3C8B7205594A400F978B7 /* ListOrganization */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		8BA3C8AE2055900900F978B7 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				8BA3C8AF2055928000F978B7 /* RootRouter.swift */,
+				8BA3C8B12055930900F978B7 /* RootWireframe.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		8BA3C8B7205594A400F978B7 /* ListOrganization */ = {
+			isa = PBXGroup;
+			children = (
+				8BA3C8B920559CDF00F978B7 /* View */,
+				8BA3C8BA20559CE700F978B7 /* Router */,
+				8BA3C8B52055940100F978B7 /* ListOrganizationWireframe.swift */,
+			);
+			path = ListOrganization;
+			sourceTree = "<group>";
+		};
+		8BA3C8B8205597B200F978B7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8BA3C8AC20558ED700F978B7 /* App */,
+				8BA3C8AD20558F1100F978B7 /* Modules */,
+				8BA3C8BD20559F2400F978B7 /* Common */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		8BA3C8B920559CDF00F978B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8BA3C88C20555E0300F978B7 /* ListOrganizationViewController.swift */,
+				8BA3C88E20555E0300F978B7 /* ListOrganization.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8BA3C8BA20559CE700F978B7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				8BA3C8B3205593AB00F978B7 /* ListOrganizationRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		8BA3C8BD20559F2400F978B7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8BA3C8BB20559F1F00F978B7 /* Helpers.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,9 +271,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BA3C89520555E0300F978B7 /* LaunchScreen.storyboard in Resources */,
 				8BA3C89220555E0300F978B7 /* Assets.xcassets in Resources */,
-				8BA3C89020555E0300F978B7 /* Main.storyboard in Resources */,
+				8BA3C89020555E0300F978B7 /* ListOrganization.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,8 +290,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BA3C88D20555E0300F978B7 /* ViewController.swift in Sources */,
+				8BA3C8B22055930900F978B7 /* RootWireframe.swift in Sources */,
+				8BA3C8BC20559F1F00F978B7 /* Helpers.swift in Sources */,
+				8BA3C88D20555E0300F978B7 /* ListOrganizationViewController.swift in Sources */,
+				8BA3C8B4205593AB00F978B7 /* ListOrganizationRouter.swift in Sources */,
+				8BA3C8B02055928000F978B7 /* RootRouter.swift in Sources */,
 				8BA3C88B20555E0300F978B7 /* AppDelegate.swift in Sources */,
+				8BA3C8B62055940100F978B7 /* ListOrganizationWireframe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,20 +319,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8BA3C88E20555E0300F978B7 /* Main.storyboard */ = {
+		8BA3C88E20555E0300F978B7 /* ListOrganization.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8BA3C88F20555E0300F978B7 /* Base */,
 			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8BA3C89320555E0300F978B7 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8BA3C89420555E0300F978B7 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
+			name = ListOrganization.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -355,7 +443,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GPCUK2KXD2;
-				INFOPLIST_FILE = OpenNgo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/OpenNgo/Supported Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ikrutik.OpenNgo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -370,7 +459,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GPCUK2KXD2;
-				INFOPLIST_FILE = OpenNgo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/OpenNgo/Supported Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ikrutik.OpenNgo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
