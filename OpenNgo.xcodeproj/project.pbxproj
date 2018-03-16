@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B7156A3205C156100888003 /* ContractTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7156A1205C156100888003 /* ContractTableViewCell.swift */; };
+		8B7156A4205C156100888003 /* ContractTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B7156A2205C156100888003 /* ContractTableViewCell.xib */; };
+		8B8E467A20591FE100CF0B01 /* DetailsOrganozation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B8E467920591FE100CF0B01 /* DetailsOrganozation.storyboard */; };
 		8BA3C88B20555E0300F978B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3C88A20555E0300F978B7 /* AppDelegate.swift */; };
 		8BA3C88D20555E0300F978B7 /* ListOrganizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3C88C20555E0300F978B7 /* ListOrganizationViewController.swift */; };
 		8BA3C89020555E0300F978B7 /* ListOrganization.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BA3C88E20555E0300F978B7 /* ListOrganization.storyboard */; };
@@ -17,6 +20,11 @@
 		8BA3C8B4205593AB00F978B7 /* ListOrganizationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3C8B3205593AB00F978B7 /* ListOrganizationRouter.swift */; };
 		8BA3C8B62055940100F978B7 /* ListOrganizationWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3C8B52055940100F978B7 /* ListOrganizationWireframe.swift */; };
 		8BA3C8BC20559F1F00F978B7 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3C8BB20559F1F00F978B7 /* Helpers.swift */; };
+		8BED36ED20569AF30090B839 /* ListOrganizationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BED36EC20569AF30090B839 /* ListOrganizationPresenter.swift */; };
+		8BED36EF20569B080090B839 /* ListOrganizationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BED36EE20569B080090B839 /* ListOrganizationInteractor.swift */; };
+		8BED36F120569B360090B839 /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BED36F020569B360090B839 /* Organization.swift */; };
+		AEEA6EF601F3E8F89E2872E9 /* Pods_OpenNgo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92FE1F903548114BA72C8A13 /* Pods_OpenNgo.framework */; };
+		B45BE5023654D9F7F5314E25 /* Pods_OpenNgoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C230D24B690BD15721AD60BF /* Pods_OpenNgoTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B855F1AB5E0E0B75C11275B /* Pods-OpenNgoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenNgoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenNgoTests/Pods-OpenNgoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F2AE07426882106A81A4449 /* Pods-OpenNgoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenNgoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenNgoTests/Pods-OpenNgoTests.release.xcconfig"; sourceTree = "<group>"; };
+		8B7156A1205C156100888003 /* ContractTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractTableViewCell.swift; sourceTree = "<group>"; };
+		8B7156A2205C156100888003 /* ContractTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContractTableViewCell.xib; sourceTree = "<group>"; };
+		8B8E467920591FE100CF0B01 /* DetailsOrganozation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailsOrganozation.storyboard; sourceTree = "<group>"; };
 		8BA3C88720555E0300F978B7 /* OpenNgo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenNgo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BA3C88A20555E0300F978B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BA3C88C20555E0300F978B7 /* ListOrganizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrganizationViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +57,13 @@
 		8BA3C8B3205593AB00F978B7 /* ListOrganizationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrganizationRouter.swift; sourceTree = "<group>"; };
 		8BA3C8B52055940100F978B7 /* ListOrganizationWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrganizationWireframe.swift; sourceTree = "<group>"; };
 		8BA3C8BB20559F1F00F978B7 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		8BED36EC20569AF30090B839 /* ListOrganizationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrganizationPresenter.swift; sourceTree = "<group>"; };
+		8BED36EE20569B080090B839 /* ListOrganizationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrganizationInteractor.swift; sourceTree = "<group>"; };
+		8BED36F020569B360090B839 /* Organization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
+		92FE1F903548114BA72C8A13 /* Pods_OpenNgo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenNgo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C12C65CE630E5363D9C2F499 /* Pods-OpenNgo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenNgo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenNgo/Pods-OpenNgo.debug.xcconfig"; sourceTree = "<group>"; };
+		C230D24B690BD15721AD60BF /* Pods_OpenNgoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenNgoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE255892F493FA9C6331B113 /* Pods-OpenNgo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenNgo.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenNgo/Pods-OpenNgo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEEA6EF601F3E8F89E2872E9 /* Pods_OpenNgo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,18 +79,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B45BE5023654D9F7F5314E25 /* Pods_OpenNgoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D0145C9CF1A92CDD10ACCBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92FE1F903548114BA72C8A13 /* Pods_OpenNgo.framework */,
+				C230D24B690BD15721AD60BF /* Pods_OpenNgoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3763A9E4EC503A07CF90E3CF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C12C65CE630E5363D9C2F499 /* Pods-OpenNgo.debug.xcconfig */,
+				EE255892F493FA9C6331B113 /* Pods-OpenNgo.release.xcconfig */,
+				0B855F1AB5E0E0B75C11275B /* Pods-OpenNgoTests.debug.xcconfig */,
+				3F2AE07426882106A81A4449 /* Pods-OpenNgoTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		8BA3C87E20555E0200F978B7 = {
 			isa = PBXGroup;
 			children = (
 				8BA3C88920555E0300F978B7 /* OpenNgo */,
 				8BA3C89E20555E0300F978B7 /* OpenNgoTests */,
 				8BA3C88820555E0300F978B7 /* Products */,
+				3763A9E4EC503A07CF90E3CF /* Pods */,
+				0D0145C9CF1A92CDD10ACCBF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +174,9 @@
 			children = (
 				8BA3C8AE2055900900F978B7 /* Root */,
 				8BA3C8B7205594A400F978B7 /* ListOrganization */,
+				8B8E467920591FE100CF0B01 /* DetailsOrganozation.storyboard */,
+				8B7156A1205C156100888003 /* ContractTableViewCell.swift */,
+				8B7156A2205C156100888003 /* ContractTableViewCell.xib */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -149,6 +196,8 @@
 				8BA3C8B920559CDF00F978B7 /* View */,
 				8BA3C8BA20559CE700F978B7 /* Router */,
 				8BA3C8B52055940100F978B7 /* ListOrganizationWireframe.swift */,
+				8BED36EC20569AF30090B839 /* ListOrganizationPresenter.swift */,
+				8BED36EE20569B080090B839 /* ListOrganizationInteractor.swift */,
 			);
 			path = ListOrganization;
 			sourceTree = "<group>";
@@ -184,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				8BA3C8BB20559F1F00F978B7 /* Helpers.swift */,
+				8BED36F020569B360090B839 /* Organization.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -195,9 +245,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BA3C8A420555E0300F978B7 /* Build configuration list for PBXNativeTarget "OpenNgo" */;
 			buildPhases = (
+				1BFB6942488CD0D79FC76086 /* [CP] Check Pods Manifest.lock */,
 				8BA3C88320555E0200F978B7 /* Sources */,
 				8BA3C88420555E0200F978B7 /* Frameworks */,
 				8BA3C88520555E0200F978B7 /* Resources */,
+				EF257D7CFC41E6955E75BFD6 /* [CP] Embed Pods Frameworks */,
+				5F64BFD5CD87BD05FC8B0CA4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -212,9 +265,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BA3C8A720555E0300F978B7 /* Build configuration list for PBXNativeTarget "OpenNgoTests" */;
 			buildPhases = (
+				E2107A8ABA875BED2854CD88 /* [CP] Check Pods Manifest.lock */,
 				8BA3C89720555E0300F978B7 /* Sources */,
 				8BA3C89820555E0300F978B7 /* Frameworks */,
 				8BA3C89920555E0300F978B7 /* Resources */,
+				AE88979BE2E17A6A15F0E5A3 /* [CP] Embed Pods Frameworks */,
+				B24B13303F951B19E1C089DC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -272,7 +328,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BA3C89220555E0300F978B7 /* Assets.xcassets in Resources */,
+				8B8E467A20591FE100CF0B01 /* DetailsOrganozation.storyboard in Resources */,
 				8BA3C89020555E0300F978B7 /* ListOrganization.storyboard in Resources */,
+				8B7156A4205C156100888003 /* ContractTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +343,114 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1BFB6942488CD0D79FC76086 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenNgo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F64BFD5CD87BD05FC8B0CA4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenNgo/Pods-OpenNgo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE88979BE2E17A6A15F0E5A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenNgoTests/Pods-OpenNgoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B24B13303F951B19E1C089DC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenNgoTests/Pods-OpenNgoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2107A8ABA875BED2854CD88 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenNgoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF257D7CFC41E6955E75BFD6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OpenNgo/Pods-OpenNgo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/ScrollableGraphView/ScrollableGraphView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ScrollableGraphView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenNgo/Pods-OpenNgo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8BA3C88320555E0200F978B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -293,9 +459,13 @@
 				8BA3C8B22055930900F978B7 /* RootWireframe.swift in Sources */,
 				8BA3C8BC20559F1F00F978B7 /* Helpers.swift in Sources */,
 				8BA3C88D20555E0300F978B7 /* ListOrganizationViewController.swift in Sources */,
+				8BED36ED20569AF30090B839 /* ListOrganizationPresenter.swift in Sources */,
 				8BA3C8B4205593AB00F978B7 /* ListOrganizationRouter.swift in Sources */,
+				8BED36EF20569B080090B839 /* ListOrganizationInteractor.swift in Sources */,
 				8BA3C8B02055928000F978B7 /* RootRouter.swift in Sources */,
 				8BA3C88B20555E0300F978B7 /* AppDelegate.swift in Sources */,
+				8BED36F120569B360090B839 /* Organization.swift in Sources */,
+				8B7156A3205C156100888003 /* ContractTableViewCell.swift in Sources */,
 				8BA3C8B62055940100F978B7 /* ListOrganizationWireframe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,6 +609,7 @@
 		};
 		8BA3C8A520555E0300F978B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C12C65CE630E5363D9C2F499 /* Pods-OpenNgo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -455,6 +626,7 @@
 		};
 		8BA3C8A620555E0300F978B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE255892F493FA9C6331B113 /* Pods-OpenNgo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -471,6 +643,7 @@
 		};
 		8BA3C8A820555E0300F978B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B855F1AB5E0E0B75C11275B /* Pods-OpenNgoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +661,7 @@
 		};
 		8BA3C8A920555E0300F978B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F2AE07426882106A81A4449 /* Pods-OpenNgoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
