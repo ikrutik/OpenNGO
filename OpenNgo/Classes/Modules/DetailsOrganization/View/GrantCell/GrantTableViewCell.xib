@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="306" id="Tm2-MO-NSj" customClass="GrantTableViewCell" customModule="OpenNgo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="789" height="306"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Tm2-MO-NSj" id="cc5-Wt-Fff">
+                <rect key="frame" x="0.0" y="0.0" width="789" height="305.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Подробнее на clearspending.ru" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kt4-JS-q05">
+                        <rect key="frame" x="60.5" y="278.5" width="668.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Грант Президента РФ – Всероссийский патриотический молодёжный центр &quot;Патриот&quot;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUl-lw-Ypr">
+                        <rect key="frame" x="62.5" y="13" width="664.5" height="52"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="wUl-lw-Ypr" secondAttribute="height" multiplier="600:47" id="FYW-y8-5EW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hdG-Yu-w2V">
+                        <rect key="frame" x="60.5" y="95.5" width="672.5" height="161.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="hdG-Yu-w2V" secondAttribute="height" multiplier="595:143" id="u2W-Ea-67k"/>
+                        </constraints>
+                        <mutableString key="text">«Проект "Всероссийский патриотический молодёжный центр "Патриот" в г. Севастополе направлен на развитие и поддержку проектов молодёжных организаций и союзов по самым разным направлениям: военно спортивные дисциплины и военно-спортивная игра "Зарница", спортивное ориентирование, моторалли, мотокросс, подводное плавание, детская студия актёрского мастерства и другим видам активных видов молодёжного спорта, отдыха и внешкольного занятия. Центр размещается в 17 км от города Гасфорта, где с 2009 года проводилось Байк-Шоу "Ночных Волков", которое внесло свою роль в возращении легендарного города домой. Кроме регулярных занятий детей в секциях и кружках, проведения соревнований и конкурсов по самым разным дисциплинам, Центр "Патриот" станет площадкой для проведения всероссийских молодёжных форумов, фестивалей и семинаров.»
+
+</mutableString>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zvK-GN-95u">
+                        <rect key="frame" x="60.5" y="71" width="668.5" height="20.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="23.06.2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpb-zd-nPI">
+                                <rect key="frame" x="0.0" y="0.0" width="551" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12 000 000, 00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGs-T3-4nI">
+                                <rect key="frame" x="551" y="0.0" width="117.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Kt4-JS-q05" firstAttribute="leading" secondItem="cc5-Wt-Fff" secondAttribute="leadingMargin" constant="2" id="FSo-t5-Fbf"/>
+                    <constraint firstItem="hdG-Yu-w2V" firstAttribute="top" secondItem="zvK-GN-95u" secondAttribute="bottom" constant="4" id="OJF-wT-qyf"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Kt4-JS-q05" secondAttribute="bottom" constant="2" id="S7M-dl-YWe"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Kt4-JS-q05" secondAttribute="trailing" constant="2" id="Zvx-gv-HYE"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="wUl-lw-Ypr" secondAttribute="trailing" constant="4" id="apz-yd-lyT"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="zvK-GN-95u" secondAttribute="trailing" constant="2" id="bcn-am-Dhb"/>
+                    <constraint firstItem="hdG-Yu-w2V" firstAttribute="trailing" secondItem="cc5-Wt-Fff" secondAttribute="trailingMargin" constant="2" id="egy-gB-eOx"/>
+                    <constraint firstItem="hdG-Yu-w2V" firstAttribute="leading" secondItem="cc5-Wt-Fff" secondAttribute="leadingMargin" constant="2" id="hNK-Vz-c0v"/>
+                    <constraint firstItem="zvK-GN-95u" firstAttribute="top" secondItem="wUl-lw-Ypr" secondAttribute="bottom" constant="6" id="hRl-8x-gMq"/>
+                    <constraint firstItem="zvK-GN-95u" firstAttribute="leading" secondItem="cc5-Wt-Fff" secondAttribute="leadingMargin" constant="2" id="jtG-BQ-1H7"/>
+                    <constraint firstItem="wUl-lw-Ypr" firstAttribute="leading" secondItem="cc5-Wt-Fff" secondAttribute="leadingMargin" constant="4" id="nYd-YC-kzg"/>
+                    <constraint firstItem="wUl-lw-Ypr" firstAttribute="top" secondItem="cc5-Wt-Fff" secondAttribute="topMargin" constant="2" id="wWq-p1-5uH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="guh-Ed-0UW"/>
+            <point key="canvasLocation" x="101.5" y="-86"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="269" id="KGk-i7-Jjw" customClass="ContractTableViewCell" customModule="OpenNgo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="635" height="269"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="635" height="268.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="asx-ok-Gmu">
+                        <rect key="frame" x="22" y="19" width="591" height="17.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20.10.2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GmT-ta-qOk">
+                                <rect key="frame" x="0.0" y="0.0" width="94" height="17.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Контракт:  № 4543545435435435433 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hL2-wF-Hy8">
+                                <rect key="frame" x="94" y="0.0" width="349.5" height="17.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="300 000 000, 00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1N7-xO-FUX">
+                                <rect key="frame" x="443.5" y="0.0" width="147.5" height="17.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Заказчик:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CFy-sx-dzZ">
+                        <rect key="frame" x="22" y="59.5" width="76.5" height="18"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="АДМИНИСТРАЦИЯ ГОРОДСКОГО ПОСЕЛЕНИЯ КРАСНОГОРСК КРАСНОГОРСКОГО МУНИЦИПАЛЬНОГО РАЙОНА МОСКОВСКОЙ ОБЛАСТИ" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rhc-WO-HMe">
+                        <rect key="frame" x="116" y="51" width="501" height="73"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Rhc-WO-HMe" secondAttribute="height" multiplier="501:73" id="hbM-os-h2m"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Предметы контракта: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfT-ky-vHA">
+                        <rect key="frame" x="22" y="132" width="591" height="18"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Подробнее на clearspending.ru" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhK-jC-HAI">
+                        <rect key="frame" x="22" y="245.5" width="591" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Услуги по выступлению музыкальной группы / артиста." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1x-e8-hXR">
+                        <rect key="frame" x="22" y="158" width="591" height="79"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="U1x-e8-hXR" secondAttribute="height" multiplier="591:79" id="0YZ-Jq-uYW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="asx-ok-Gmu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="14t-nF-ehW"/>
+                    <constraint firstItem="CFy-sx-dzZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="1Pp-Lp-8UR"/>
+                    <constraint firstItem="LhK-jC-HAI" firstAttribute="top" secondItem="U1x-e8-hXR" secondAttribute="bottom" constant="8.5" id="2Sb-gK-RfT"/>
+                    <constraint firstItem="Rhc-WO-HMe" firstAttribute="top" secondItem="asx-ok-Gmu" secondAttribute="bottom" constant="15" id="2sw-nF-unc"/>
+                    <constraint firstItem="Rhc-WO-HMe" firstAttribute="leading" secondItem="CFy-sx-dzZ" secondAttribute="trailing" constant="17.5" id="8JY-Wj-M42"/>
+                    <constraint firstItem="U1x-e8-hXR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="8Za-xn-CgY"/>
+                    <constraint firstItem="MfT-ky-vHA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="DeS-sX-Qdj"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="LhK-jC-HAI" secondAttribute="trailing" constant="2" id="Hls-Hc-P5N"/>
+                    <constraint firstItem="asx-ok-Gmu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="IMc-Tm-7xA"/>
+                    <constraint firstItem="LhK-jC-HAI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="Kvk-hn-P7d"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="U1x-e8-hXR" secondAttribute="trailing" constant="2" id="ceN-Nm-KE3"/>
+                    <constraint firstItem="Rhc-WO-HMe" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="2" id="hJg-Rw-f77"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="MfT-ky-vHA" secondAttribute="trailing" constant="2" id="jpE-VM-2vq"/>
+                    <constraint firstItem="CFy-sx-dzZ" firstAttribute="top" secondItem="asx-ok-Gmu" secondAttribute="bottom" constant="23" id="jwO-hn-0oe"/>
+                    <constraint firstItem="MfT-ky-vHA" firstAttribute="top" secondItem="Rhc-WO-HMe" secondAttribute="bottom" constant="8" id="lgJ-p8-VjJ"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="asx-ok-Gmu" secondAttribute="trailing" constant="2" id="q6h-0E-kq6"/>
+                    <constraint firstItem="LhK-jC-HAI" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" constant="2" id="wB8-Nc-l7t"/>
+                    <constraint firstItem="U1x-e8-hXR" firstAttribute="top" secondItem="MfT-ky-vHA" secondAttribute="bottom" constant="8" id="z32-o3-oPl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="-1.5" y="-120.5"/>
+        </tableViewCell>
+    </objects>
+</document>
