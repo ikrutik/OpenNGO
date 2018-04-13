@@ -9,5 +9,5 @@
 import UIKit
 
 protocol RootWireframe: class {
-    func presentOrganizationScreen(in window: UIWindow)
+    func presentMainScreen(in window: UIWindow)
 }

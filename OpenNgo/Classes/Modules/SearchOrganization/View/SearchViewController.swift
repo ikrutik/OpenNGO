@@ -1,18 +1,21 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  OpenNgo
 //
-//  Created by Sergey Krutikov on 11.03.2018.
+//  Created by Sergey Krutikov on 13.04.2018.
 //  Copyright © 2018 Sergey Krutikov. All rights reserved.
 //
 
+import Foundation
 import UIKit
-import Alamofire
 
-class ListOrganizationViewController: UIViewController {
-
+class SearchOrganizationViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+
 }
+
+
 

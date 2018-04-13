@@ -10,9 +10,9 @@ import UIKit
 
 class RootRouter: RootWireframe {
     
-    func presentOrganizationScreen(in window: UIWindow) {
+    func presentMainScreen(in window: UIWindow) {
             window.makeKeyAndVisible()
-            window.rootViewController = ListOrganizationRouter().assembleModule()
+            window.rootViewController = SearchRouter().assembleModule()
     }
 }
 

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="iph-pZ-NNC">
+            <objects>
+                <navigationController id="4Gm-Z3-Sd9" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pXF-zA-Khx">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="cYZ-i3-8i8" kind="relationship" relationship="rootViewController" id="zYs-eb-kHM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kJa-Jb-uqI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-407" y="134"/>
+        </scene>
+        <!--Открытые НКО -->
+        <scene sceneID="x41-5X-Pn9">
+            <objects>
+                <viewController storyboardIdentifier="SearchOrganizationViewController" id="cYZ-i3-8i8" customClass="SearchOrganizationViewController" customModule="OpenNgo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YMg-5V-9jf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Название организации/ИНН/ОГРН" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PtR-D0-7o9">
+                                <rect key="frame" x="15" y="79" width="345" height="17"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ZA-HU-xUI">
+                                <rect key="frame" x="15" y="106" width="345" height="36"/>
+                                <color key="backgroundColor" red="0.019607843137254902" green="0.52156862745098043" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Найти">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4tx-wY-CsC">
+                                <rect key="frame" x="15" y="150" width="345" height="179.5"/>
+                                <string key="text">Некоммерческие организации (НКО) ежегодно получают миллиарды рублей от государства. Обычно это происходит в виде грантов, субсидий или контрактов.
+
+На портале вы можете найти большую часть данных по поступлениям от государства некоммерческим организациям. Гранты – 2013-2016гг, контракты – 2011-2017гг, субсидии – 2012-2017гг.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PtR-D0-7o9" firstAttribute="leading" secondItem="pJs-NW-XDs" secondAttribute="leading" constant="15" id="H8n-xJ-8Dk"/>
+                            <constraint firstItem="PtR-D0-7o9" firstAttribute="top" secondItem="pJs-NW-XDs" secondAttribute="top" constant="15" id="Ng8-Cr-QbO"/>
+                            <constraint firstItem="0ZA-HU-xUI" firstAttribute="top" secondItem="PtR-D0-7o9" secondAttribute="bottom" constant="10" id="P4j-6v-4dX"/>
+                            <constraint firstItem="0ZA-HU-xUI" firstAttribute="leading" secondItem="pJs-NW-XDs" secondAttribute="leading" constant="15" id="bO8-aA-TDT"/>
+                            <constraint firstItem="pJs-NW-XDs" firstAttribute="trailing" secondItem="4tx-wY-CsC" secondAttribute="trailing" constant="15" id="hjq-Rf-jEp"/>
+                            <constraint firstItem="4tx-wY-CsC" firstAttribute="top" secondItem="0ZA-HU-xUI" secondAttribute="bottom" constant="8" id="pfm-F3-Ph7"/>
+                            <constraint firstItem="pJs-NW-XDs" firstAttribute="trailing" secondItem="PtR-D0-7o9" secondAttribute="trailing" constant="15" id="ti6-tW-nyR"/>
+                            <constraint firstItem="pJs-NW-XDs" firstAttribute="trailing" secondItem="0ZA-HU-xUI" secondAttribute="trailing" constant="15" id="uu2-YY-Fph"/>
+                            <constraint firstItem="4tx-wY-CsC" firstAttribute="leading" secondItem="pJs-NW-XDs" secondAttribute="leading" constant="15" id="zZZ-kb-Xcm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pJs-NW-XDs"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Открытые НКО " id="Z9x-U2-r4Q"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yox-X0-ugb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="377" y="134"/>
+        </scene>
+    </scenes>
+</document>
