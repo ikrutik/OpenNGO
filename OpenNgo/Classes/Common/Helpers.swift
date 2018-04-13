@@ -7,3 +7,17 @@
 //
 
 import Foundation
+import UIKit
+
+extension UIStoryboard {
+    func instantiateVC<T: UIViewController>() -> T? {
+        if let name = NSStringFromClass(T.self).components(separatedBy: ".").last {
+            return instantiateViewController(withIdentifier: name) as? T
+        }
+        return nil
+    }
+    
+    func instantiateVC<T: UIViewController>(with identifier: String) -> T? {
+        return instantiateViewController(withIdentifier: identifier) as? T
+    }
+}

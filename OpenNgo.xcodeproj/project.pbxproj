@@ -118,7 +118,6 @@
 			isa = PBXGroup;
 			children = (
 				8B028057205E882E0009BB30 /* View */,
-				8B8E467920591FE100CF0B01 /* DetailsOrganization.storyboard */,
 			);
 			path = DetailsOrganization;
 			sourceTree = "<group>";
@@ -126,6 +125,7 @@
 		8B028057205E882E0009BB30 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8B8E467920591FE100CF0B01 /* DetailsOrganization.storyboard */,
 				8B028061205E92FE0009BB30 /* ContractCell */,
 				8B028060205E92F30009BB30 /* GrantCell */,
 				8B028062205E93080009BB30 /* SubsidyCell */,
@@ -158,6 +158,30 @@
 				8B02805D205E891C0009BB30 /* SubsidyTableViewCell.xib */,
 			);
 			path = SubsidyCell;
+			sourceTree = "<group>";
+		};
+		8B91BB672080E27600ABCBD8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8BED36EC20569AF30090B839 /* ListOrganizationPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8B91BB682080E29200ABCBD8 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8BED36EE20569B080090B839 /* ListOrganizationInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		8B91BB692080E2F200ABCBD8 /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				8BA3C8B52055940100F978B7 /* ListOrganizationWireframe.swift */,
+			);
+			path = Wireframe;
 			sourceTree = "<group>";
 		};
 		8BA3C87E20555E0200F978B7 = {
@@ -245,11 +269,11 @@
 		8BA3C8B7205594A400F978B7 /* ListOrganization */ = {
 			isa = PBXGroup;
 			children = (
-				8BA3C8B920559CDF00F978B7 /* View */,
 				8BA3C8BA20559CE700F978B7 /* Router */,
-				8BA3C8B52055940100F978B7 /* ListOrganizationWireframe.swift */,
-				8BED36EC20569AF30090B839 /* ListOrganizationPresenter.swift */,
-				8BED36EE20569B080090B839 /* ListOrganizationInteractor.swift */,
+				8BA3C8B920559CDF00F978B7 /* View */,
+				8B91BB692080E2F200ABCBD8 /* Wireframe */,
+				8B91BB672080E27600ABCBD8 /* Presenter */,
+				8B91BB682080E29200ABCBD8 /* Interactor */,
 			);
 			path = ListOrganization;
 			sourceTree = "<group>";
@@ -341,7 +365,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Sergey Krutikov";
 				TargetAttributes = {
 					8BA3C88620555E0200F978B7 = {
@@ -487,16 +511,10 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-OpenNgo/Pods-OpenNgo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/ScrollableGraphView/ScrollableGraphView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ScrollableGraphView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -570,6 +588,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -577,6 +596,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -604,7 +624,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -627,6 +647,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -634,6 +655,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -655,7 +677,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
