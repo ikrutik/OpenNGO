@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 protocol ListOrganizationWireframe: class {
-    weak var viewController: UIViewController? { get set }
+    var viewController: UIViewController? { get set }
 
     func assembleModule() -> UIViewController
 }

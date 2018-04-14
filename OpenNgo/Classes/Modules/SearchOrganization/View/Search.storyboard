@@ -35,13 +35,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Название организации/ИНН/ОГРН" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PtR-D0-7o9">
-                                <rect key="frame" x="15" y="79" width="345" height="17"/>
+                                <rect key="frame" x="15" y="69" width="345" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Plc-mq-9GT"/>
+                                </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4tx-wY-CsC">
+                                <rect key="frame" x="15" y="155" width="345" height="179.5"/>
+                                <string key="text">Некоммерческие организации (НКО) ежегодно получают миллиарды рублей от государства. Обычно это происходит в виде грантов, субсидий или контрактов.
+
+На портале вы можете найти большую часть данных по поступлениям от государства некоммерческим организациям. Гранты – 2013-2016гг, контракты – 2011-2017гг, субсидии – 2012-2017гг.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ZA-HU-xUI">
-                                <rect key="frame" x="15" y="106" width="345" height="36"/>
+                                <rect key="frame" x="15" y="104" width="345" height="36"/>
                                 <color key="backgroundColor" red="0.019607843137254902" green="0.52156862745098043" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" title="Найти">
@@ -52,36 +64,33 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="clickSearchBtn:" destination="cYZ-i3-8i8" eventType="touchUpInside" id="dH9-dK-Eca"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4tx-wY-CsC">
-                                <rect key="frame" x="15" y="150" width="345" height="179.5"/>
-                                <string key="text">Некоммерческие организации (НКО) ежегодно получают миллиарды рублей от государства. Обычно это происходит в виде грантов, субсидий или контрактов.
-
-На портале вы можете найти большую часть данных по поступлениям от государства некоммерческим организациям. Гранты – 2013-2016гг, контракты – 2011-2017гг, субсидии – 2012-2017гг.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="PtR-D0-7o9" firstAttribute="leading" secondItem="pJs-NW-XDs" secondAttribute="leading" constant="15" id="H8n-xJ-8Dk"/>
-                            <constraint firstItem="PtR-D0-7o9" firstAttribute="top" secondItem="pJs-NW-XDs" secondAttribute="top" constant="15" id="Ng8-Cr-QbO"/>
-                            <constraint firstItem="0ZA-HU-xUI" firstAttribute="top" secondItem="PtR-D0-7o9" secondAttribute="bottom" constant="10" id="P4j-6v-4dX"/>
-                            <constraint firstItem="0ZA-HU-xUI" firstAttribute="leading" secondItem="pJs-NW-XDs" secondAttribute="leading" constant="15" id="bO8-aA-TDT"/>
-                            <constraint firstItem="pJs-NW-XDs" firstAttribute="trailing" secondItem="4tx-wY-CsC" secondAttribute="trailing" constant="15" id="hjq-Rf-jEp"/>
-                            <constraint firstItem="4tx-wY-CsC" firstAttribute="top" secondItem="0ZA-HU-xUI" secondAttribute="bottom" constant="8" id="pfm-F3-Ph7"/>
-                            <constraint firstItem="pJs-NW-XDs" firstAttribute="trailing" secondItem="PtR-D0-7o9" secondAttribute="trailing" constant="15" id="ti6-tW-nyR"/>
-                            <constraint firstItem="pJs-NW-XDs" firstAttribute="trailing" secondItem="0ZA-HU-xUI" secondAttribute="trailing" constant="15" id="uu2-YY-Fph"/>
-                            <constraint firstItem="4tx-wY-CsC" firstAttribute="leading" secondItem="pJs-NW-XDs" secondAttribute="leading" constant="15" id="zZZ-kb-Xcm"/>
+                            <constraint firstItem="PtR-D0-7o9" firstAttribute="top" secondItem="pJs-NW-XDs" secondAttribute="top" constant="5" id="878-TC-a2a"/>
+                            <constraint firstItem="4tx-wY-CsC" firstAttribute="leading" secondItem="pJs-NW-XDs" secondAttribute="leading" constant="15" id="9fV-2T-mdR"/>
+                            <constraint firstItem="pJs-NW-XDs" firstAttribute="trailing" secondItem="PtR-D0-7o9" secondAttribute="trailing" constant="15" id="ALL-kt-JhS"/>
+                            <constraint firstItem="4tx-wY-CsC" firstAttribute="top" secondItem="0ZA-HU-xUI" secondAttribute="bottom" constant="15" id="IDu-k4-Re1"/>
+                            <constraint firstItem="0ZA-HU-xUI" firstAttribute="leading" secondItem="pJs-NW-XDs" secondAttribute="leading" constant="15" id="MnY-Td-ur9"/>
+                            <constraint firstItem="pJs-NW-XDs" firstAttribute="trailing" secondItem="4tx-wY-CsC" secondAttribute="trailing" constant="15" id="RDE-KC-13u"/>
+                            <constraint firstItem="0ZA-HU-xUI" firstAttribute="top" secondItem="PtR-D0-7o9" secondAttribute="bottom" constant="5" id="dm9-us-hOo"/>
+                            <constraint firstItem="pJs-NW-XDs" firstAttribute="trailing" secondItem="0ZA-HU-xUI" secondAttribute="trailing" constant="15" id="iZf-Rl-kBO"/>
+                            <constraint firstItem="PtR-D0-7o9" firstAttribute="leading" secondItem="pJs-NW-XDs" secondAttribute="leading" constant="15" id="s7k-1z-Kyo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pJs-NW-XDs"/>
                     </view>
                     <navigationItem key="navigationItem" title="Открытые НКО " id="Z9x-U2-r4Q"/>
+                    <connections>
+                        <outlet property="SearchTextField" destination="PtR-D0-7o9" id="IXi-Lm-d0N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yox-X0-ugb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="377" y="134"/>
+            <point key="canvasLocation" x="376.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>

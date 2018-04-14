@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 protocol SearchWireframe: class {
-    weak var viewController: UIViewController? { get set }
+    var viewController: UIViewController? { get set }
     
     func assembleModule() -> UIViewController
     func showOrganizations() -> ListOrganizationViewController
