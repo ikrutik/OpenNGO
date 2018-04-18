@@ -36,7 +36,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="80" id="Ohc-in-t2r"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -53,7 +53,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="●" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="coI-Mt-jMM">
-                                                    <rect key="frame" x="17" y="121" width="15" height="15"/>
+                                                    <rect key="frame" x="17" y="118" width="15" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="88h-bC-nL4"/>
                                                         <constraint firstAttribute="width" constant="15" id="jZH-rV-HX2"/>
@@ -63,7 +63,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="●" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJY-69-Fce">
-                                                    <rect key="frame" x="17" y="92" width="15" height="15"/>
+                                                    <rect key="frame" x="17" y="89" width="15" height="15"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="15" id="5IC-IV-jHX"/>
                                                         <constraint firstAttribute="width" constant="15" id="8Dq-l5-cx3"/>
@@ -73,13 +73,13 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Костромская область" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L81-8N-J8x">
-                                                    <rect key="frame" x="40" y="91" width="327" height="18"/>
+                                                    <rect key="frame" x="40" y="88" width="327" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Учреждение" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x39-AW-D25">
-                                                    <rect key="frame" x="40" y="119" width="312" height="18"/>
+                                                    <rect key="frame" x="40" y="116" width="312" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -93,15 +93,15 @@
                                                 <constraint firstItem="BYK-wC-Wan" firstAttribute="leading" secondItem="lQ8-Gh-6N6" secondAttribute="leadingMargin" constant="2" id="B0W-e0-fvT"/>
                                                 <constraint firstItem="x39-AW-D25" firstAttribute="leading" secondItem="coI-Mt-jMM" secondAttribute="trailing" constant="8" id="Bab-jh-mtf"/>
                                                 <constraint firstItem="rJY-69-Fce" firstAttribute="leading" secondItem="lQ8-Gh-6N6" secondAttribute="leadingMargin" constant="2" id="Bb3-ry-EA4"/>
-                                                <constraint firstItem="BYK-wC-Wan" firstAttribute="top" secondItem="x39-AW-D25" secondAttribute="bottom" constant="10" id="EnU-hZ-xu8"/>
+                                                <constraint firstItem="BYK-wC-Wan" firstAttribute="top" secondItem="x39-AW-D25" secondAttribute="bottom" constant="13" id="EnU-hZ-xu8"/>
                                                 <constraint firstItem="L81-8N-J8x" firstAttribute="leading" secondItem="rJY-69-Fce" secondAttribute="trailing" constant="8" id="GbJ-eM-urH"/>
                                                 <constraint firstItem="IAG-xn-qbM" firstAttribute="top" secondItem="lQ8-Gh-6N6" secondAttribute="top" constant="2" id="K7C-Bu-fiR"/>
                                                 <constraint firstAttribute="trailing" secondItem="IAG-xn-qbM" secondAttribute="trailing" constant="2" id="KAU-U3-10H"/>
                                                 <constraint firstAttribute="trailing" secondItem="L81-8N-J8x" secondAttribute="trailing" constant="8" id="Mcg-Ul-uKR"/>
-                                                <constraint firstItem="xaM-iN-XmG" firstAttribute="top" secondItem="x39-AW-D25" secondAttribute="bottom" constant="2" id="Svc-9E-2TD"/>
+                                                <constraint firstItem="xaM-iN-XmG" firstAttribute="top" secondItem="x39-AW-D25" secondAttribute="bottom" constant="5" id="Svc-9E-2TD"/>
                                                 <constraint firstItem="coI-Mt-jMM" firstAttribute="top" secondItem="rJY-69-Fce" secondAttribute="bottom" constant="14" id="Svp-a9-fin"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BYK-wC-Wan" secondAttribute="trailingMargin" id="bIQ-oX-O70"/>
-                                                <constraint firstItem="rJY-69-Fce" firstAttribute="top" secondItem="IAG-xn-qbM" secondAttribute="bottom" constant="10" id="efd-Ir-m54"/>
+                                                <constraint firstItem="rJY-69-Fce" firstAttribute="top" secondItem="IAG-xn-qbM" secondAttribute="bottom" constant="7" id="efd-Ir-m54"/>
                                                 <constraint firstItem="coI-Mt-jMM" firstAttribute="leading" secondItem="lQ8-Gh-6N6" secondAttribute="leadingMargin" constant="2" id="ftK-Vp-6TC"/>
                                                 <constraint firstItem="x39-AW-D25" firstAttribute="baseline" secondItem="coI-Mt-jMM" secondAttribute="firstBaseline" id="l90-8B-Oqx"/>
                                                 <constraint firstAttribute="trailing" secondItem="xaM-iN-XmG" secondAttribute="trailing" constant="8" id="lCY-0w-w9s"/>
