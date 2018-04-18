@@ -29,22 +29,22 @@
         <!--Открытые НКО -->
         <scene sceneID="x41-5X-Pn9">
             <objects>
-                <viewController storyboardIdentifier="SearchOrganizationViewController" id="cYZ-i3-8i8" customClass="SearchOrganizationViewController" customModule="OpenNgo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchOrganizationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cYZ-i3-8i8" customClass="SearchOrganizationViewController" customModule="OpenNgo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YMg-5V-9jf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Название организации/ИНН/ОГРН" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PtR-D0-7o9">
-                                <rect key="frame" x="15" y="69" width="345" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Введите название организации" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PtR-D0-7o9">
+                                <rect key="frame" x="15" y="107" width="345" height="25"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Plc-mq-9GT"/>
+                                    <constraint firstAttribute="height" constant="25" id="yZy-4x-TnO"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4tx-wY-CsC">
-                                <rect key="frame" x="15" y="155" width="345" height="179.5"/>
+                                <rect key="frame" x="15" y="188" width="345" height="179.5"/>
                                 <string key="text">Некоммерческие организации (НКО) ежегодно получают миллиарды рублей от государства. Обычно это происходит в виде грантов, субсидий или контрактов.
 
 На портале вы можете найти большую часть данных по поступлениям от государства некоммерческим организациям. Гранты – 2013-2016гг, контракты – 2011-2017гг, субсидии – 2012-2017гг.</string>
@@ -53,7 +53,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ZA-HU-xUI">
-                                <rect key="frame" x="15" y="104" width="345" height="36"/>
+                                <rect key="frame" x="15" y="137" width="345" height="36"/>
                                 <color key="backgroundColor" red="0.019607843137254902" green="0.52156862745098043" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" title="Найти">
@@ -68,24 +68,38 @@
                                     <action selector="clickSearchBtn:" destination="cYZ-i3-8i8" eventType="touchUpInside" id="dH9-dK-Eca"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6eW-eF-NbX">
+                                <rect key="frame" x="15" y="74" width="345" height="29"/>
+                                <segments>
+                                    <segment title="Название"/>
+                                    <segment title="ИНН"/>
+                                    <segment title="ОГРН"/>
+                                </segments>
+                                <connections>
+                                    <action selector="typeRequestChanged:" destination="cYZ-i3-8i8" eventType="valueChanged" id="hlM-Ya-LEO"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="PtR-D0-7o9" firstAttribute="top" secondItem="pJs-NW-XDs" secondAttribute="top" constant="5" id="878-TC-a2a"/>
+                            <constraint firstItem="6eW-eF-NbX" firstAttribute="leading" secondItem="pJs-NW-XDs" secondAttribute="leading" constant="15" id="5jL-rt-hOG"/>
+                            <constraint firstItem="0ZA-HU-xUI" firstAttribute="top" secondItem="PtR-D0-7o9" secondAttribute="bottom" constant="5" id="8H3-bc-c2d"/>
                             <constraint firstItem="4tx-wY-CsC" firstAttribute="leading" secondItem="pJs-NW-XDs" secondAttribute="leading" constant="15" id="9fV-2T-mdR"/>
-                            <constraint firstItem="pJs-NW-XDs" firstAttribute="trailing" secondItem="PtR-D0-7o9" secondAttribute="trailing" constant="15" id="ALL-kt-JhS"/>
                             <constraint firstItem="4tx-wY-CsC" firstAttribute="top" secondItem="0ZA-HU-xUI" secondAttribute="bottom" constant="15" id="IDu-k4-Re1"/>
+                            <constraint firstItem="PtR-D0-7o9" firstAttribute="leading" secondItem="pJs-NW-XDs" secondAttribute="leading" constant="15" id="LAW-J6-IEo"/>
                             <constraint firstItem="0ZA-HU-xUI" firstAttribute="leading" secondItem="pJs-NW-XDs" secondAttribute="leading" constant="15" id="MnY-Td-ur9"/>
                             <constraint firstItem="pJs-NW-XDs" firstAttribute="trailing" secondItem="4tx-wY-CsC" secondAttribute="trailing" constant="15" id="RDE-KC-13u"/>
-                            <constraint firstItem="0ZA-HU-xUI" firstAttribute="top" secondItem="PtR-D0-7o9" secondAttribute="bottom" constant="5" id="dm9-us-hOo"/>
+                            <constraint firstItem="6eW-eF-NbX" firstAttribute="top" secondItem="pJs-NW-XDs" secondAttribute="top" constant="10" id="VnA-0x-YXa"/>
+                            <constraint firstItem="PtR-D0-7o9" firstAttribute="top" secondItem="6eW-eF-NbX" secondAttribute="bottom" constant="5" id="a7t-oP-Zx6"/>
+                            <constraint firstItem="pJs-NW-XDs" firstAttribute="trailing" secondItem="PtR-D0-7o9" secondAttribute="trailing" constant="15" id="i4d-G0-ou1"/>
                             <constraint firstItem="pJs-NW-XDs" firstAttribute="trailing" secondItem="0ZA-HU-xUI" secondAttribute="trailing" constant="15" id="iZf-Rl-kBO"/>
-                            <constraint firstItem="PtR-D0-7o9" firstAttribute="leading" secondItem="pJs-NW-XDs" secondAttribute="leading" constant="15" id="s7k-1z-Kyo"/>
+                            <constraint firstItem="pJs-NW-XDs" firstAttribute="trailing" secondItem="6eW-eF-NbX" secondAttribute="trailing" constant="15" id="mer-NR-9aB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="pJs-NW-XDs"/>
                     </view>
                     <navigationItem key="navigationItem" title="Открытые НКО " id="Z9x-U2-r4Q"/>
                     <connections>
-                        <outlet property="SearchTextField" destination="PtR-D0-7o9" id="IXi-Lm-d0N"/>
+                        <outlet property="searchTextField" destination="PtR-D0-7o9" id="GgB-HJ-ukp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yox-X0-ugb" userLabel="First Responder" sceneMemberID="firstResponder"/>

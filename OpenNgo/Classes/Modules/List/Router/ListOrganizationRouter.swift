@@ -13,16 +13,15 @@ class ListOrganizationRouter: ListOrganizationWireframe {
     
         var viewController: UIViewController?
     
-        func assembleModule() -> UIViewController {
+        func assembleModule(organization: [Organization]) -> ListOrganizationViewController {
             let view = listOrgViewControllerFromStoryboard()
             let router = ListOrganizationRouter()
-            let navigation = UINavigationController(rootViewController: view)
-            
+            view.organizations = organization
             router.viewController = view
-            return navigation
+            return view
     }
     
-    func listOrgViewControllerFromStoryboard() -> UIViewController {
+    func listOrgViewControllerFromStoryboard() -> ListOrganizationViewController {
         let storyboard = listOrgStoryboard()
         guard let vc: ListOrganizationViewController = storyboard.instantiateVC() else {
             return ListOrganizationViewController()

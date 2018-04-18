@@ -8,15 +8,31 @@
 
 import Foundation
 import Alamofire
+import RxSwift
 
-class NetworkService {
-    let jsonDecoder = JSONDecoder()
-    let URL = "https://openngo.ru/api/organizations/"
+let jsonDecoder = JSONDecoder()
+let URL = "https://openngo.ru/api/organizations/"
+
+extension Request: ReactiveCompatible {}
+
+extension Reactive where Base: DataRequest {
     
-    func getOrganizations(params: Parameters) {
-        Alamofire.request(URL, method: .get, parameters: params).responseJSON(completionHandler: { (response) in
-            let result = try! self.jsonDecoder.decode(OrganizationResponseModel.self, from: response.data!)
-            print(result.results)
-        })
+    func responseJSON() -> Observable<Data> {
+        return Observable.create { observer in
+            let request = self.base.responseJSON { response in
+                switch response.result {
+                case .success(_):
+                    observer.onNext(response.data!)
+                    observer.onCompleted()
+                case .failure(let error):
+                    observer.onError(error)
+                }
+            }
+            return Disposables.create(with: request.cancel)
+        }
     }
+}
+
+protocol NetworkService {
+    func getOrganizations(params: Parameters) -> Observable<[OrganizationResponseModel]>
 }

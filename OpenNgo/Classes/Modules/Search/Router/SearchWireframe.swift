@@ -13,6 +13,5 @@ protocol SearchWireframe: class {
     var viewController: UIViewController? { get set }
     
     func assembleModule() -> UIViewController
-    func showOrganizations() -> ListOrganizationViewController
-
+    func showOrganizations(orgs: [Organization])
 }

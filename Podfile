@@ -5,15 +5,15 @@ target 'OpenNgo' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
   
-#  # Reactive
-#  pod 'RxSwift', '~> 3.6.1'
-#  pod 'RxCocoa', '~> 3.6.1'
+  # Reactive
+  pod 'RxSwift'
+  pod 'RxCocoa'
 
   # Network
-  pod 'Alamofire', '~> 4.7'
+  pod 'Alamofire', '4.7.1'
 
-#  # UI
-#  pod 'ScrollableGraphView'
+  # UI
+  pod 'ScrollableGraphView'
 
   target 'OpenNgoTests' do
     inherit! :search_paths

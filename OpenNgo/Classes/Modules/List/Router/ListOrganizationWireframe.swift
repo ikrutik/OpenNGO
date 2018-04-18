@@ -12,5 +12,5 @@ import UIKit
 protocol ListOrganizationWireframe: class {
     var viewController: UIViewController? { get set }
 
-    func assembleModule() -> UIViewController
+    func assembleModule(organization: [Organization]) -> ListOrganizationViewController
 }

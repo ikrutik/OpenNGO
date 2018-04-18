@@ -10,25 +10,25 @@ import Foundation
 import UIKit
 
 class SearchRouter: SearchWireframe {
-
-    
-    
-    var viewController: UIViewController?
+    weak var viewController: UIViewController?
     
     func assembleModule() -> UIViewController {
-        let view = searchControllerFromStoryboard()
         let router = SearchRouter()
-        let navigation = UINavigationController(rootViewController: view)
-        
+        let view = searchControllerFromStoryboard()
+        view.router = router
         router.viewController = view
-        return navigation
+        
+        self.viewController = UINavigationController(rootViewController: view)
+        return viewController!
     }
     
-    func showOrganizations() -> ListOrganizationViewController {
-        return ListOrganizationViewController()
+    func showOrganizations(orgs: [Organization]) {
+        let listVC = ListOrganizationRouter().assembleModule(organization: orgs)
+        listVC.organizations = orgs
+        self.viewController?.navigationController?.pushViewController(listVC, animated: true)
     }
     
-    func searchControllerFromStoryboard() -> UIViewController {
+    func searchControllerFromStoryboard() -> SearchOrganizationViewController {
         let storyboard = getSearchStoryboard()
         guard let vc: SearchOrganizationViewController = storyboard.instantiateVC() else {
             return SearchOrganizationViewController()
