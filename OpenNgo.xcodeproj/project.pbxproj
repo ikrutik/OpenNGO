@@ -11,9 +11,15 @@
 		8B02805B205E88C60009BB30 /* GrantTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B028059205E88C60009BB30 /* GrantTableViewCell.xib */; };
 		8B02805E205E891C0009BB30 /* SubsidyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B02805C205E891C0009BB30 /* SubsidyTableViewCell.swift */; };
 		8B02805F205E891C0009BB30 /* SubsidyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B02805D205E891C0009BB30 /* SubsidyTableViewCell.xib */; };
+		8B5EA002208400E100B2F455 /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5EA001208400E100B2F455 /* SearchPresenter.swift */; };
+		8B5EA004208400EF00B2F455 /* SearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B5EA003208400EF00B2F455 /* SearchInteractor.swift */; };
 		8B7156A3205C156100888003 /* ContractTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7156A1205C156100888003 /* ContractTableViewCell.swift */; };
 		8B7156A4205C156100888003 /* ContractTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B7156A2205C156100888003 /* ContractTableViewCell.xib */; };
 		8B8E467A20591FE100CF0B01 /* DetailsOrganization.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B8E467920591FE100CF0B01 /* DetailsOrganization.storyboard */; };
+		8B91BB6F2080EA1300ABCBD8 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B91BB6E2080EA1300ABCBD8 /* SearchViewController.swift */; };
+		8B91BB732080F2D100ABCBD8 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B91BB722080F2D100ABCBD8 /* Search.storyboard */; };
+		8B91BB752080F40100ABCBD8 /* SearchWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B91BB742080F40100ABCBD8 /* SearchWireframe.swift */; };
+		8B91BB772080F41000ABCBD8 /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B91BB762080F41000ABCBD8 /* SearchRouter.swift */; };
 		8BA3C88B20555E0300F978B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3C88A20555E0300F978B7 /* AppDelegate.swift */; };
 		8BA3C88D20555E0300F978B7 /* ListOrganizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3C88C20555E0300F978B7 /* ListOrganizationViewController.swift */; };
 		8BA3C89020555E0300F978B7 /* ListOrganization.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BA3C88E20555E0300F978B7 /* ListOrganization.storyboard */; };
@@ -24,9 +30,11 @@
 		8BA3C8B4205593AB00F978B7 /* ListOrganizationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3C8B3205593AB00F978B7 /* ListOrganizationRouter.swift */; };
 		8BA3C8B62055940100F978B7 /* ListOrganizationWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3C8B52055940100F978B7 /* ListOrganizationWireframe.swift */; };
 		8BA3C8BC20559F1F00F978B7 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA3C8BB20559F1F00F978B7 /* Helpers.swift */; };
+		8BA4139E208757EF004CD699 /* ListOrganizationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA4139C208757EF004CD699 /* ListOrganizationCell.swift */; };
 		8BED36ED20569AF30090B839 /* ListOrganizationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BED36EC20569AF30090B839 /* ListOrganizationPresenter.swift */; };
 		8BED36EF20569B080090B839 /* ListOrganizationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BED36EE20569B080090B839 /* ListOrganizationInteractor.swift */; };
 		8BED36F120569B360090B839 /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BED36F020569B360090B839 /* Organization.swift */; };
+		8BF6DFFB20811FCC006BEB7F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF6DFFA20811FCC006BEB7F /* NetworkService.swift */; };
 		AEEA6EF601F3E8F89E2872E9 /* Pods_OpenNgo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92FE1F903548114BA72C8A13 /* Pods_OpenNgo.framework */; };
 		B45BE5023654D9F7F5314E25 /* Pods_OpenNgoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C230D24B690BD15721AD60BF /* Pods_OpenNgoTests.framework */; };
 /* End PBXBuildFile section */
@@ -48,9 +56,15 @@
 		8B028059205E88C60009BB30 /* GrantTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GrantTableViewCell.xib; sourceTree = "<group>"; };
 		8B02805C205E891C0009BB30 /* SubsidyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubsidyTableViewCell.swift; sourceTree = "<group>"; };
 		8B02805D205E891C0009BB30 /* SubsidyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubsidyTableViewCell.xib; sourceTree = "<group>"; };
+		8B5EA001208400E100B2F455 /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		8B5EA003208400EF00B2F455 /* SearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchInteractor.swift; sourceTree = "<group>"; };
 		8B7156A1205C156100888003 /* ContractTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractTableViewCell.swift; sourceTree = "<group>"; };
 		8B7156A2205C156100888003 /* ContractTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContractTableViewCell.xib; sourceTree = "<group>"; };
 		8B8E467920591FE100CF0B01 /* DetailsOrganization.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailsOrganization.storyboard; sourceTree = "<group>"; };
+		8B91BB6E2080EA1300ABCBD8 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		8B91BB722080F2D100ABCBD8 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		8B91BB742080F40100ABCBD8 /* SearchWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchWireframe.swift; sourceTree = "<group>"; };
+		8B91BB762080F41000ABCBD8 /* SearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouter.swift; sourceTree = "<group>"; };
 		8BA3C88720555E0300F978B7 /* OpenNgo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenNgo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BA3C88A20555E0300F978B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BA3C88C20555E0300F978B7 /* ListOrganizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrganizationViewController.swift; sourceTree = "<group>"; };
@@ -65,9 +79,11 @@
 		8BA3C8B3205593AB00F978B7 /* ListOrganizationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrganizationRouter.swift; sourceTree = "<group>"; };
 		8BA3C8B52055940100F978B7 /* ListOrganizationWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrganizationWireframe.swift; sourceTree = "<group>"; };
 		8BA3C8BB20559F1F00F978B7 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		8BA4139C208757EF004CD699 /* ListOrganizationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrganizationCell.swift; sourceTree = "<group>"; };
 		8BED36EC20569AF30090B839 /* ListOrganizationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrganizationPresenter.swift; sourceTree = "<group>"; };
 		8BED36EE20569B080090B839 /* ListOrganizationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOrganizationInteractor.swift; sourceTree = "<group>"; };
 		8BED36F020569B360090B839 /* Organization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
+		8BF6DFFA20811FCC006BEB7F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		92FE1F903548114BA72C8A13 /* Pods_OpenNgo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenNgo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C12C65CE630E5363D9C2F499 /* Pods-OpenNgo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenNgo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenNgo/Pods-OpenNgo.debug.xcconfig"; sourceTree = "<group>"; };
 		C230D24B690BD15721AD60BF /* Pods_OpenNgoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenNgoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,12 +130,12 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		8B028055205E87EB0009BB30 /* DetailsOrganization */ = {
+		8B028055205E87EB0009BB30 /* DetailsOrg */ = {
 			isa = PBXGroup;
 			children = (
 				8B028057205E882E0009BB30 /* View */,
 			);
-			path = DetailsOrganization;
+			path = DetailsOrg;
 			sourceTree = "<group>";
 		};
 		8B028057205E882E0009BB30 /* View */ = {
@@ -160,6 +176,22 @@
 			path = SubsidyCell;
 			sourceTree = "<group>";
 		};
+		8B5EA005208403E300B2F455 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8B5EA001208400E100B2F455 /* SearchPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8B5EA006208403E900B2F455 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8B5EA003208400EF00B2F455 /* SearchInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		8B91BB672080E27600ABCBD8 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,12 +208,41 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
-		8B91BB692080E2F200ABCBD8 /* Wireframe */ = {
+		8B91BB6A2080E5C200ABCBD8 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				8BA3C8B52055940100F978B7 /* ListOrganizationWireframe.swift */,
+				8BF6DFFA20811FCC006BEB7F /* NetworkService.swift */,
 			);
-			path = Wireframe;
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		8B91BB702080F10E00ABCBD8 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				8B91BB712080F2C000ABCBD8 /* View */,
+				8B91BB782080F41500ABCBD8 /* Router */,
+				8B5EA005208403E300B2F455 /* Presenter */,
+				8B5EA006208403E900B2F455 /* Interactor */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		8B91BB712080F2C000ABCBD8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B91BB6E2080EA1300ABCBD8 /* SearchViewController.swift */,
+				8B91BB722080F2D100ABCBD8 /* Search.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8B91BB782080F41500ABCBD8 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				8B91BB742080F40100ABCBD8 /* SearchWireframe.swift */,
+				8B91BB762080F41000ABCBD8 /* SearchRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		8BA3C87E20555E0200F978B7 = {
@@ -251,8 +312,9 @@
 			isa = PBXGroup;
 			children = (
 				8BA3C8AE2055900900F978B7 /* Root */,
-				8BA3C8B7205594A400F978B7 /* ListOrganization */,
-				8B028055205E87EB0009BB30 /* DetailsOrganization */,
+				8B91BB702080F10E00ABCBD8 /* Search */,
+				8BA3C8B7205594A400F978B7 /* ListOrg */,
+				8B028055205E87EB0009BB30 /* DetailsOrg */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -266,16 +328,15 @@
 			path = Root;
 			sourceTree = "<group>";
 		};
-		8BA3C8B7205594A400F978B7 /* ListOrganization */ = {
+		8BA3C8B7205594A400F978B7 /* ListOrg */ = {
 			isa = PBXGroup;
 			children = (
 				8BA3C8BA20559CE700F978B7 /* Router */,
 				8BA3C8B920559CDF00F978B7 /* View */,
-				8B91BB692080E2F200ABCBD8 /* Wireframe */,
 				8B91BB672080E27600ABCBD8 /* Presenter */,
 				8B91BB682080E29200ABCBD8 /* Interactor */,
 			);
-			path = ListOrganization;
+			path = ListOrg;
 			sourceTree = "<group>";
 		};
 		8BA3C8B8205597B200F978B7 /* Classes */ = {
@@ -283,6 +344,7 @@
 			children = (
 				8BA3C8AC20558ED700F978B7 /* App */,
 				8BA3C8AD20558F1100F978B7 /* Modules */,
+				8B91BB6A2080E5C200ABCBD8 /* Networking */,
 				8BA3C8BD20559F2400F978B7 /* Common */,
 			);
 			path = Classes;
@@ -293,6 +355,7 @@
 			children = (
 				8BA3C88C20555E0300F978B7 /* ListOrganizationViewController.swift */,
 				8BA3C88E20555E0300F978B7 /* ListOrganization.storyboard */,
+				8BA4139C208757EF004CD699 /* ListOrganizationCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -300,6 +363,7 @@
 		8BA3C8BA20559CE700F978B7 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				8BA3C8B52055940100F978B7 /* ListOrganizationWireframe.swift */,
 				8BA3C8B3205593AB00F978B7 /* ListOrganizationRouter.swift */,
 			);
 			path = Router;
@@ -406,6 +470,7 @@
 				8B02805B205E88C60009BB30 /* GrantTableViewCell.xib in Resources */,
 				8BA3C89220555E0300F978B7 /* Assets.xcassets in Resources */,
 				8B8E467A20591FE100CF0B01 /* DetailsOrganization.storyboard in Resources */,
+				8B91BB732080F2D100ABCBD8 /* Search.storyboard in Resources */,
 				8BA3C89020555E0300F978B7 /* ListOrganization.storyboard in Resources */,
 				8B7156A4205C156100888003 /* ContractTableViewCell.xib in Resources */,
 				8B02805F205E891C0009BB30 /* SubsidyTableViewCell.xib in Resources */,
@@ -511,10 +576,16 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-OpenNgo/Pods-OpenNgo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/ScrollableGraphView/ScrollableGraphView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ScrollableGraphView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -533,13 +604,20 @@
 				8B02805A205E88C60009BB30 /* GrantTableViewCell.swift in Sources */,
 				8BA3C88D20555E0300F978B7 /* ListOrganizationViewController.swift in Sources */,
 				8BED36ED20569AF30090B839 /* ListOrganizationPresenter.swift in Sources */,
+				8B5EA002208400E100B2F455 /* SearchPresenter.swift in Sources */,
 				8BA3C8B4205593AB00F978B7 /* ListOrganizationRouter.swift in Sources */,
 				8BED36EF20569B080090B839 /* ListOrganizationInteractor.swift in Sources */,
+				8B91BB772080F41000ABCBD8 /* SearchRouter.swift in Sources */,
 				8BA3C8B02055928000F978B7 /* RootRouter.swift in Sources */,
+				8B91BB752080F40100ABCBD8 /* SearchWireframe.swift in Sources */,
 				8BA3C88B20555E0300F978B7 /* AppDelegate.swift in Sources */,
+				8B91BB6F2080EA1300ABCBD8 /* SearchViewController.swift in Sources */,
+				8B5EA004208400EF00B2F455 /* SearchInteractor.swift in Sources */,
 				8BED36F120569B360090B839 /* Organization.swift in Sources */,
 				8B7156A3205C156100888003 /* ContractTableViewCell.swift in Sources */,
+				8BF6DFFB20811FCC006BEB7F /* NetworkService.swift in Sources */,
 				8BA3C8B62055940100F978B7 /* ListOrganizationWireframe.swift in Sources */,
+				8BA4139E208757EF004CD699 /* ListOrganizationCell.swift in Sources */,
 				8B02805E205E891C0009BB30 /* SubsidyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
