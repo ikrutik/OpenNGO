@@ -12,6 +12,7 @@ import Alamofire
 class ListOrganizationViewController: UIViewController {
 
     @IBOutlet weak var organizationTableView: UITableView!
+    let heightCell: CGFloat = 170
     var organizations: [Organization] = []
     
     override func viewDidLoad() {
@@ -22,15 +23,15 @@ class ListOrganizationViewController: UIViewController {
     func initTableView() {
         self.organizationTableView.delegate = self
         self.organizationTableView.dataSource = self
-//        self.organizationTableView.rowHeight = UITableViewAutomaticDimension
-        self.organizationTableView.estimatedRowHeight = 150
+        self.organizationTableView.rowHeight = UITableViewAutomaticDimension
+        self.organizationTableView.estimatedRowHeight = heightCell
         self.organizationTableView.reloadData()
     }
 }
 
 extension ListOrganizationViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 170
+        return heightCell
     }
 }
 

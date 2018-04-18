@@ -18,9 +18,9 @@ class ListOrganizationCell: UITableViewCell {
     func setOrganization(organization: Organization) {
         self.name.text = organization.name
         self.region.text = organization.region.name
-        self.amount.text = "\(organization.moneyTransfersSum)"
+        self.amount.text = organization.moneyTransfersSum.toCurrencyFormatString()
         self.type.text = organization.type.name
-    }
+    }    
 }
 
 extension ListOrganizationCell: DequeuableProtocol {}

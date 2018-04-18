@@ -130,12 +130,12 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		8B028055205E87EB0009BB30 /* Details */ = {
+		8B028055205E87EB0009BB30 /* DetailsOrg */ = {
 			isa = PBXGroup;
 			children = (
 				8B028057205E882E0009BB30 /* View */,
 			);
-			path = Details;
+			path = DetailsOrg;
 			sourceTree = "<group>";
 		};
 		8B028057205E882E0009BB30 /* View */ = {
@@ -313,8 +313,8 @@
 			children = (
 				8BA3C8AE2055900900F978B7 /* Root */,
 				8B91BB702080F10E00ABCBD8 /* Search */,
-				8BA3C8B7205594A400F978B7 /* List */,
-				8B028055205E87EB0009BB30 /* Details */,
+				8BA3C8B7205594A400F978B7 /* ListOrg */,
+				8B028055205E87EB0009BB30 /* DetailsOrg */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -328,7 +328,7 @@
 			path = Root;
 			sourceTree = "<group>";
 		};
-		8BA3C8B7205594A400F978B7 /* List */ = {
+		8BA3C8B7205594A400F978B7 /* ListOrg */ = {
 			isa = PBXGroup;
 			children = (
 				8BA3C8BA20559CE700F978B7 /* Router */,
@@ -336,7 +336,7 @@
 				8B91BB672080E27600ABCBD8 /* Presenter */,
 				8B91BB682080E29200ABCBD8 /* Interactor */,
 			);
-			path = List;
+			path = ListOrg;
 			sourceTree = "<group>";
 		};
 		8BA3C8B8205597B200F978B7 /* Classes */ = {

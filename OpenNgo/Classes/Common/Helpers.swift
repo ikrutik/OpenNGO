@@ -9,6 +9,21 @@
 import Foundation
 import UIKit
 
+extension Double {
+    public func toCurrencyFormatString() -> String {
+        let currencyFormatter = NumberFormatter()
+        currencyFormatter.usesGroupingSeparator = true
+        currencyFormatter.numberStyle = .currency
+        currencyFormatter.locale = .current
+        currencyFormatter.currencyGroupingSeparator = " "
+        currencyFormatter.currencySymbol = "₽ "
+        currencyFormatter.roundingMode = .up
+        currencyFormatter.roundingIncrement = 1
+        currencyFormatter.minimumFractionDigits = 0
+        return currencyFormatter.string(from: NSNumber(value: self))!
+    }
+}
+
 extension UIStoryboard {
     func instantiateVC<T: UIViewController>() -> T? {
         if let name = NSStringFromClass(T.self).components(separatedBy: ".").last {
